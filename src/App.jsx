@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Navbar from './components/Navbar/Navbar'
+import PokemonDetailContainer from "./components/PokemonDetailContainer/PokemonDetailContainer"
 import './App.css'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         <Navbar/>
         <Routes>
             <Route path="/" element={<Home/>}/>
+            <Route path="/pokemon-detail/:id" element={<PokemonDetailContainer/>}/>
         </Routes>
     </BrowserRouter>
   )
