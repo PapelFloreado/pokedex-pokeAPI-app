@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Dropdown from '../Dropdown/Dropdown'
+
 
 const Navbar = () => {
   return (
@@ -10,7 +10,6 @@ const Navbar = () => {
             <button>
                 <Link to="/">HOME</Link>
             </button>
-            <Dropdown/>
         </nav>
     </div>
   )

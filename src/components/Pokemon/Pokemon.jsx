@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Spinner from '../Spinner/Spinner'
 
 const Pokemon = ({name, sprites, id}) => {
+  
     
   return (
     
@@ -16,16 +17,6 @@ const Pokemon = ({name, sprites, id}) => {
                 <div>
                     <p className='text-black font-bold'>Poke ID: n°{id}</p>
                 </div>
-                {/* <div className=' my-8'>
-                  <h2 className='text-black font-bold uppercase'>Abilities</h2>
-                  {
-                    abilities.map((ab, index)=>(
-                      <div key={index}>
-                        <p className='text-black uppercase' >{ab.ability.name}</p>
-                      </div>
-                    ))
-                  }
-                </div> */}
                 <Link to={`/pokemon-detail/${id}`}>
                   <button className='my-10'>see more information</button>
                 </Link>
