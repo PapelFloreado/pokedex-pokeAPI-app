@@ -4,7 +4,7 @@ import Spinner from '../Spinner/Spinner'
 const PokemonDetail = ({pokeId}) => {
   
   const { name, sprites, abilities, base_experience, id } = pokeId
-console.log(pokeId)
+
   return (
     <div className='flex flex-col'>
       <h2 className='uppercase text-3xl font-bold mt-16'>{name}</h2>      

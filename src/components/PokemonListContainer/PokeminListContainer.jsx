@@ -16,7 +16,7 @@ const PokeminListContainer = () => {
         const url = `https://pokeapi.co/api/v2/pokemon/${pokemonSearch}/`
         const {data} = await axios(url)
             .catch(function(error){
-                console.log(error)
+                alert(error)
                 setPokemonSearch({})
                 setLoad(false)
                 return alert(error)
