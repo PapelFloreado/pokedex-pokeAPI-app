@@ -38,7 +38,7 @@ const PokeminListContainer = () => {
 
         <>  
             <div className='flex mx-auto max-w-[200px] justify-center flex-col '>
-                <input onChange={handlePokemon}  className='rounded-md p-3 mb-6 ' type="text" name="poke" id="poke" />
+                <input onChange={handlePokemon}  className='rounded-md p-3 mb-6' placeholder='n° or name of pokemon' type="text" name="poke" id="poke" />
                 <button onClick={()=>pokeCall()}>SEARCH!</button>
             </div>
             {
